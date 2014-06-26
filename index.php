@@ -17,8 +17,7 @@ function TesteBatista() {
 	// if (isset ( $_COOKIE ['id_client'] )) {
 	// echo "Know user. <br>";
 	// } else {
-	echo "Unknow user . <br>";
-	
+	// echo "Unknow user . <br>";
 	$link = getConnection ();
 	
 	$idThread = mysql_thread_id ( $link );
