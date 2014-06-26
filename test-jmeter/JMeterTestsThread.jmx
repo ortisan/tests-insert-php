@@ -12,18 +12,19 @@
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Grupo de Usuários" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Controlador de Iteração" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">10</stringProp>
+          <stringProp name="LoopController.loops">500</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">500</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1000</stringProp>
         <longProp name="ThreadGroup.start_time">1402942663000</longProp>
         <longProp name="ThreadGroup.end_time">1402942663000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.delayedStart">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Padrões de Requisição HTTP" enabled="true">
@@ -71,27 +72,28 @@
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <value class="SampleSaveConfiguration">
-              <time>false</time>
+              <time>true</time>
               <latency>false</latency>
               <timestamp>false</timestamp>
               <success>false</success>
               <label>false</label>
-              <code>false</code>
+              <code>true</code>
               <message>false</message>
               <threadName>false</threadName>
               <dataType>false</dataType>
               <encoding>false</encoding>
               <assertions>false</assertions>
               <subresults>false</subresults>
-              <responseData>true</responseData>
+              <responseData>false</responseData>
               <samplerData>false</samplerData>
-              <xml>true</xml>
+              <xml>false</xml>
               <fieldNames>false</fieldNames>
               <responseHeaders>false</responseHeaders>
               <requestHeaders>false</requestHeaders>
               <responseDataOnError>false</responseDataOnError>
               <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
               <assertionsResultsToSave>0</assertionsResultsToSave>
+              <sampleCount>true</sampleCount>
             </value>
           </objProp>
           <objProp>

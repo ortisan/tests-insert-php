@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="../vendor/autoload.php" haltOnFailure="true" haltOnError="true">
+	<testsuites>
+		<testsuite name="Object_Freezer">
+			<file>./SimpleTest.php</file>
+		</testsuite>
+	</testsuites>
+</phpunit>

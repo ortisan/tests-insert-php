@@ -1,0 +1,21 @@
+{
+	"name": "tentativafc/tests-insert-php",
+	"autoload": 
+	{
+		"psr-0": 
+		{
+			"Brony": "src/",
+			"Brony\\Tests": "tests/"
+		}
+	},
+
+	"require": 
+	{
+		"monolog/monolog": "1.2.*"
+	},
+
+	"require-dev": 
+	{
+		"phpunit/phpunit": "4.1.*"
+	}
+}
